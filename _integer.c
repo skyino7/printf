@@ -12,7 +12,7 @@ void _integer(int num, int *pcount)
    
    if (num < 0)
    {
-     putchar('-');
+     _putchar('-');
      *pcount += 1;
      num *= -1;
    }
@@ -26,12 +26,12 @@ void _integer(int num, int *pcount)
    
    while (num > 9)
    {
-       putchar(num / Tens + '0');
+       _putchar(num / Tens + '0');
        *pcount += 1;
        num = num % Tens;
        Tens /= 10;
    }
-   putchar((num % 10) + '0');
+   _putchar((num % 10) + '0');
    *pcount += 1;
 
 }
