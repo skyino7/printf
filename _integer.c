@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * @brief 
- * 
+ * _integer - function
+ * @num: num
+ * @pcount: pointer
  */
 
 void _integer(int num, int *pcount)
