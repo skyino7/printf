@@ -8,6 +8,6 @@
 
 void _char(char c, int *pcount)
 {
-    _putchar(c);
-    *pcount += 1;
+	_putchar(c);
+	*pcount += 1;
 }

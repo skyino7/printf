@@ -4,8 +4,8 @@
 /**
  * _putchar - using _putchar to print
  *
- * c - caharacter input
- * Return: 
+ * @c: character input
+ * Return: c
  */
 
 int _putchar(char c)
