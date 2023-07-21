@@ -4,7 +4,7 @@
 int _putchar(char c);
 void _string(char *s, int *pcount);
 void _char(char c, int *pcount);
-
+int _printf(const char *format, ...);
 
 
 #endif /*MAIN_H*/
