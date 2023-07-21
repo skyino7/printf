@@ -11,7 +11,7 @@ void _string(char *s, int *pcount)
 	int j;
 
     /*char *s = va_arg(ars, char*);*/
-	for (j = 0; s[j]; j++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
 		_putchar(s[j]);
 		*pcount += 1;

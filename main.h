@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 void _string(char *s, int *pcount);

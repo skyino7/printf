@@ -9,6 +9,9 @@
  */
 int main(void)
 {
+    /* printf("");
+    _printf(""); */
+    
     int len;
     int len2;
     int sum;
@@ -17,11 +20,22 @@ int main(void)
     long int d = 9739355992;
     int num = 0;
 
+    int a, b;
+
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
 
     _printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
+
+
+    _printf("%%\n");
+    printf("%%\n");
+
+    a = 2; b = 6; sum = a + b;
+
+    _printf("%i\n", sum);
+    printf("%i\n", sum);
 
     sum = len + len2;
 
