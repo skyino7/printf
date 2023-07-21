@@ -43,8 +43,8 @@ int _printf(const char *format, ...)
             }
             else if (format[i + j] == 'd' || format[i + j] == 'i')
             {
-                int x = va_arg(args, int);
-                _integer(x, &count);
+                int num = va_arg(args, int);
+                _integer(num, &count);
                 i += j + 1;
                 j = 1;
             }
