@@ -3,19 +3,8 @@
 Background Context
 Write your own printf function.
 
-
-
-^ In this picture, Kris, and Jul
-
-Resources
-Read or watch:
-
-Secrets of printf
-Group Projects concept page (Don’t forget to read this)
-Flowcharts concept page
-man or help:
-
 printf (3)
+
 Requirements
 General
 Allowed editors: vi, vim, emacs
@@ -48,7 +37,8 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
 Our main files will include your main header file (main.h): #include main.h
 You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf. Example of test file that you could use:
-alex@ubuntu:~/c/printf$ cat main.c 
+
+
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
@@ -93,8 +83,12 @@ int main(void)
     printf("Unknown:[%r]\n");
     return (0);
 }
-alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
-alex@ubuntu:~/c/printf$ ./printf
+
+To compile use: gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+To test: ./printf
+
+Below are the OUTPUT of the Program:
+
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 Length:[39, 39]
@@ -119,7 +113,8 @@ Len:[12]
 Len:[12]
 Unknown:[%r]
 Unknown:[%r]
-alex@ubuntu:~/c/printf$
+
+
 We strongly encourage you to work all together on a set of tests
 If the task does not specify what to do with an edge case, do the same as printf
 Copyright - Plagiarism
@@ -127,7 +122,9 @@ You are tasked to come up with solutions for the tasks below yourself to meet wi
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
 You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
-Tasks
+
+Tasks:
+
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 mandatory
 Write a function that produces output according to a format.
@@ -135,7 +132,9 @@ Write a function that produces output according to a format.
 Prototype: int _printf(const char *format, ...);
 Returns: the number of characters printed (excluding the null byte used to end output to strings)
 write output to stdout, the standard output stream
-format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:
+format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. 
+
+You need to handle the following conversion specifiers:
 c
 s
 %
@@ -144,8 +143,8 @@ You don’t have to handle the flag characters
 You don’t have to handle field width
 You don’t have to handle precision
 You don’t have to handle the length modifiers
-Repo:
 
+Repo:
 GitHub repository: printf
   
 1. Education is when you read the fine print. Experience is what you get if you don't
@@ -158,8 +157,8 @@ You don’t have to handle the flag characters
 You don’t have to handle field width
 You don’t have to handle precision
 You don’t have to handle the length modifiers
-Repo:
 
+Repo:
 GitHub repository: printf
   
 2. With a face like mine, I do better in print
@@ -167,7 +166,9 @@ GitHub repository: printf
 Handle the following custom conversion specifiers:
 
 b: the unsigned int argument is converted to binary
-alex@ubuntu:~/c/printf$ cat main.c
+
+File to create to test: main.c
+
 #include "main.h"
 
 /**
@@ -180,12 +181,13 @@ int main(void)
     _printf("%b\n", 98);
     return (0);
 }
-alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
-alex@ubuntu:~/c/printf$ ./a.out
-1100010
-alex@ubuntu:~/c/printf$
-Repo:
 
+To compile use: gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+To test: ./a.out
+
+Result: 1100010
+
+Repo:
 GitHub repository: printf
  
 3. What one has not experienced, one will never understand in print
@@ -209,7 +211,6 @@ GitHub repository: printf
 Use a local buffer of 1024 chars in order to call write as little as possible.
 
 Repo:
-
 GitHub repository: printf
   
 5. My weakness is wearing too much leopard print
@@ -218,7 +219,9 @@ Handle the following custom conversion specifier:
 
 S : prints the string.
 Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
-alex@ubuntu:~/c/printf$ cat main.c
+
+File to create: main.c
+
 #include "main.h"
 
 /**
@@ -231,12 +234,12 @@ int main(void)
     _printf("%S\n", "Best\nSchool");
     return (0);
 }
-alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
-alex@ubuntu:~/c/printf$ ./a.out
-Best\x0ASchool
-alex@ubuntu:~/c/printf$
-Repo:
 
+To compile use: gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+To test: ./a.out
+Result: Best\x0ASchool
+
+Repo:
 GitHub repository: printf
  
 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
@@ -247,8 +250,8 @@ You don’t have to handle the flag characters
 You don’t have to handle field width
 You don’t have to handle precision
 You don’t have to handle the length modifiers
-Repo:
 
+Repo:
 GitHub repository: printf
   
 7. The big print gives and the small print takes away
@@ -258,8 +261,8 @@ Handle the following flag characters for non-custom conversion specifiers:
 +
 space
 #
-Repo:
 
+Repo:
 GitHub repository: printf
   
 8. Sarcasm is lost in print
@@ -271,7 +274,6 @@ h
 Conversion specifiers to handle: d, i, u, o, x, X
 
 Repo:
-
 GitHub repository: printf
   
 9. Print some money and give it to us for the rain forests
@@ -287,7 +289,6 @@ GitHub repository: printf
 Handle the precision for non-custom conversion specifiers.
 
 Repo:
-
 GitHub repository: printf
   
 11. It's depressing when you're still around and your albums are out of print
@@ -295,7 +296,6 @@ GitHub repository: printf
 Handle the 0 flag character for non-custom conversion specifiers.
 
 Repo:
-
 GitHub repository: printf
   
 12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
@@ -303,7 +303,6 @@ GitHub repository: printf
 Handle the - flag character for non-custom conversion specifiers.
 
 Repo:
-
 GitHub repository: printf
   
 13. Print is the sharpest and the strongest weapon of our party
@@ -311,8 +310,8 @@ GitHub repository: printf
 Handle the following custom conversion specifier:
 
 r : prints the reversed string
-Repo:
 
+Repo:
 GitHub repository: printf
   
 14. The flood of print has turned reading into a process of gulping rather than savoring
@@ -320,8 +319,8 @@ GitHub repository: printf
 Handle the following custom conversion specifier:
 
 R: prints the rot13'ed string
-Repo:
 
+Repo:
 GitHub repository: printf
   
 15. *
@@ -329,5 +328,4 @@ GitHub repository: printf
 All the above options work well together.
 
 Repo:
-
 GitHub repository: printf

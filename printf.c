@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printf - cutom version of printf
+ * _printf - custom version of printf
  * @format: input string which may contain specifiers
  * Return: number of character printed to std output including new line
  */
