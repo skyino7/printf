@@ -12,8 +12,7 @@ int _printf(const char *format, ...)
 {
     /*char buffer[1024];*/
     va_list args;
-    int count = 0;
-    int i, j = 1;
+    int count = 0, i, j = 1;
     va_start(args, format);
     
     for (i = 0; format[i];)
