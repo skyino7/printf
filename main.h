@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int _putchar(char c);
 void _string(char *s, int *pcount);
