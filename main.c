@@ -32,6 +32,9 @@ int main(void)
     _printf("%%\n");
     printf("%%\n");
 
+    len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
+
     a = 2; b = 6; sum = a + b;
 
     _printf("%i\n", sum);
