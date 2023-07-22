@@ -4,18 +4,12 @@
  * _string - loops through s to print and increment pcount
  * @s: input string
  * @pcount: character counter for _printf to return
- * Return: 6
  */
 
 void _string(char *s, int *pcount)
 {
 	int j;
 
-	if (s == NULL)
-	{
-		write(1, "(null)", 6);
-		return (6);
-	}
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
 	{
