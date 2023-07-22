@@ -9,14 +9,7 @@
 void _string(char *s, int *pcount)
 {
 	int j;
-	//char *null = "(null)"
 
-	if (s == NULL)
-	{
-		write(1, "(null)", 6);
-		*pcount += 6;
-		return;
-	}
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
 	{
