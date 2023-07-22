@@ -40,6 +40,12 @@ int main(void)
     _printf("%i\n", sum);
     printf("%i\n", sum);
 
+    /* _printf(NULL);
+    printf(NULL);
+
+    _printf("");
+    printf(""); */
+
     sum = len + len2;
 
     num = d + n;
@@ -55,6 +61,18 @@ int main(void)
 
     _printf("String:[%s]\n", "I am a string !");
     printf("String:[%s]\n", "I am a string !");
+
+    len = _printf("long: [%i], [%d]\n", -4545439394949595, -4545439394949595);
+    /* len2 = printf("long: [%i], [%d]\n", -4545439394949595, -4545439394949595); */
+
+    _printf("Length:[%d, %i]\n", len, len);
+    /* printf("Length:[%d, %i]\n", len2, len2); */
+
+    len = _printf("Negative: [%i], [%d]\n", -4034, -4034);
+    len2 = printf("Negative: [%i], [%d]\n", -4034, -4034);
+
+    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len2, len2);
     
     return (0);
 }
