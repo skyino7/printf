@@ -29,6 +29,8 @@ int _printf(const char *format, ...)
 			else if (format[i + j] == 's')
 			{
 				str = va_arg(args, char *);
+				if(!str)
+					str = "(null)";
 				_string(str, &count);
 				i += j + 1;
 				j = 1;
