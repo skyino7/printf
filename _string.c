@@ -4,6 +4,7 @@
  * _string - loops through s to print and increment pcount
  * @s: input string
  * @pcount: character counter for _printf to return
+ * Return: 6
  */
 
 void _string(char *s, int *pcount)
