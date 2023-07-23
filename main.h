@@ -5,11 +5,15 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/* structure that holds specifiers and their corresponing function*/
-typedef struct
+/**
+ * struct sp - structure that holds specifiers and their corresponing function
+ * @spesifier: spesifier
+ * @function: function pointer
+ */
+typedef struct sp
 {
-    char spesifier;
-    int (*function)(const char *format, va_list arg, int *pcount);
+	char spesifier;
+	int (*function)(const char *format, va_list arg, int *pcount);
 } sp;
 
 int _printf(const char *format, ...);
