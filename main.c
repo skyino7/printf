@@ -84,7 +84,7 @@ int main(void)
 
     len = 2, len2 = 5;
 
-    sum = len % len2;
+    sum = len * len2;
 
     _printf("Sum:[%d, %i]\n", sum, sum);
     printf("Sum:[%d, %i]\n", sum, sum);
