@@ -1,17 +1,16 @@
 #include "main.h"
-
 /**
  * _printf - custom version of printf
  * @format: input string which may contain specifiers
  * Return: number of character printed to std output including new line
  */
-
 int _printf(const char *format, ...)
 {
 	/*char buffer[1024];*/
 	va_list args;
 	int count = 0, i, j = 1, k, flag = 0;
-	sp output[5] = {{'c', _char}, {'s', _string}, {'%', _module}, {'i', _integer}, {'d', _integer}};
+	sp output[5] = {{'c', _char}, {'s', _string}, {'%', _module},
+	{'i', _integer}, {'d', _integer}};
 
 	va_start(args, format);
 	(void)flag;

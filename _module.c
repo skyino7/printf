@@ -13,5 +13,5 @@ int _module(const char *format, va_list arg, int *pcount)
     (void)format;
     _putchar('%');
     *pcount += 1;
-    return(1);
+    return (1);
 }
