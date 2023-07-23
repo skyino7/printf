@@ -46,6 +46,7 @@ int _printf(const char *format, ...)
 			{
 				num = va_arg(args, int);
 				_integer(num, &count);
+				count++;
 				i += j + 1;
 				j = 1;
 			}
