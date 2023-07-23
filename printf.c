@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 				j++;
 			else
 			{
-				for (k = 0; k < 4; k++)
+				for (k = 0; k < 5; k++)
 				{
 					if (output[k].spesifier == format[i + j])
 						output[k].function(format, args, &count);
