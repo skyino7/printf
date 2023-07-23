@@ -18,12 +18,8 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + j] == ' ' || format[i + j] == '\0')
-			{
-				if (format[i + j] == '\0')
-					return (count);
-				j++;
-			}
+			if (format[i + j] == '\0')
+				return (count);
 			else
 			{
 				for (k = 0; k < 5; k++)
