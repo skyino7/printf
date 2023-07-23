@@ -14,7 +14,7 @@ int _string(const char *format, va_list arg, int *pcount)
 
 	(void)format;
 	if(!s)
-		return (6);
+		s = "(null)";
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
 	{
