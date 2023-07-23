@@ -14,7 +14,7 @@ int _char(const char *format, va_list arg, int *pcount)
 
 	(void)format;
 	if (!c)
-		return (-1);
+		c = "(null)";
 	_putchar(c);
 	*pcount += 1;
 	return (1);
