@@ -14,13 +14,15 @@ int _string(const char *format, va_list arg, int *pcount)
 	char *s = va_arg(arg, char *);
 
 	(void)format;
-	if (!s)
-		s = "(null)";
+	if (s == NULL)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
 	{
 		_putchar(s[j]);
-		*pcount += 1;
 	}
-	return (1);
+	return (j);
 }
