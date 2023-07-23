@@ -2,8 +2,9 @@
 
 /**
  * _integer - function
- * @num: num
- * @pcount: pointer
+ * @format: string input
+ * @pcount: character counter for the printf return
+ * @arg: va_list
  */
 
 void _integer(char *format, va_list arg, int *pcount)

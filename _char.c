@@ -2,8 +2,9 @@
 
 /**
  * _char - prints character and increment pcount
- * @c: character input
+ * @format: string input
  * @pcount: character counter for the printf return
+ * @arg: va_list
  */
 
 void _char(char *format, va_list arg, int *pcount)
