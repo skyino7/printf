@@ -7,7 +7,7 @@
  * @arg: va_list
  */
 
-void _integer(char *format, va_list arg, int *pcount)
+void _integer(const char *format, va_list arg, int *pcount)
 { 
     int Tens = 1;
     int cpy;

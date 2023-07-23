@@ -7,7 +7,7 @@
  * @arg: va_list
  */
 
-void _string(char *format, va_list arg, int *pcount)
+void _string(const char *format, va_list arg, int *pcount)
 {	
 	int j;
 	char *s = va_arg(arg, char *);
