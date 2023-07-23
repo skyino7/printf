@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
     /*char buffer[1024];*/
 	va_list args;
 	int count = 0, i, j = 1, k;
-	sp output[4] = {{'c', _char}, {'s', _string},
+	sp output[5] = {{'c', _char}, {'s', _string},{'%', _module}
 	{'i', _integer}, {'d', _integer}};
 
 	va_start(args, format);
@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 				j++;
 			else
 			{
-				for(k = 0; k < 4; k++)
+				for (k = 0; k < 4; k++)
 				{
 					if (output[k].spesifier == format[i + j])
 						output[k].function(format, args, &count);

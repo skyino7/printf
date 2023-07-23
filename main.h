@@ -17,5 +17,6 @@ int _putchar(char c);
 void _string(const char *format, va_list arg, int *pcount);
 void _char(const char *format, va_list arg, int *pcount);
 void _integer(const char *format, va_list arg, int *pcount);
+void _module(const char *format, va_list arg, int *pcount);
 
 #endif /*MAIN_H*/
