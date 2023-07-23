@@ -17,12 +17,6 @@ void _integer(int num, int *pcount)
      *pcount += 1;
      num *= -1;
    }
-
-   if (num == 0)
-   {
-    _putchar('0');
-    *pcount += 1;
-   }
    
    cpy = num;
    
