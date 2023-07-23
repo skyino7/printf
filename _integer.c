@@ -8,11 +8,11 @@
  */
 
 int _integer(const char *format, va_list arg, int *pcount)
-{ 
+{
     int Tens = 1;
     int cpy;
     int num = va_arg(arg, int);
-   
+
     (void)format;
     if (num < 0)
     {
@@ -38,5 +38,6 @@ int _integer(const char *format, va_list arg, int *pcount)
     }
     _putchar((num % 10) + '0');
     *pcount += 1;
-    return(1);
+
+    return (1);
 }
