@@ -8,9 +8,9 @@
 
 void _char(char *format, va_list arg, int *pcount)
 {
-	(void)format;
 	char c = va_arg(arg, int);
 
+	(void)format;
 	_putchar(c);
 	*pcount += 1;
 }

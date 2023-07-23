@@ -7,11 +7,11 @@
  */
 
 void _string(char *format, va_list arg, int *pcount)
-{
-	(void)format;
+{	
 	int j;
 	char *s = va_arg(arg, char *);
 
+	(void)format;
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
 	{
