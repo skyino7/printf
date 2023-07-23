@@ -24,21 +24,32 @@ int _integer(const char *format, va_list arg, int *pcount)
 
 	cpy = num;
 
-	while (cpy > 9)
+	if (num >= 0 && num <= 9)
 	{
-		Tens *= 10;
-		cpy = cpy / 10;
-	}
-
-	while (num > 9)
-	{
-		_putchar(num / Tens + '0');
+		_putchar(num + '0');
 		*pcount += 1;
-		num = num % Tens;
-		Tens /= 10;
 	}
-	_putchar((num % 10) + '0');
-	*pcount += 1;
+	
+	
+	if (num > 0)
+	{
+	
+		while (cpy > 9)
+		{
+			Tens *= 10;
+			cpy = cpy / 10;
+		}
+
+		while (num > 9)
+		{
+			_putchar(num / Tens + '0');
+			*pcount += 1;
+			num = num % Tens;
+			Tens /= 10;
+		}
+		_putchar((num % 10) + '0');
+		*pcount += 1;
+	}
 
 	return (1);
 }
