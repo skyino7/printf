@@ -13,8 +13,6 @@ int _char(const char *format, va_list arg, int *pcount)
 	char c = va_arg(arg, int);
 
 	(void)format;
-	if (!c)
-		c = "(null)";
 	_putchar(c);
 	*pcount += 1;
 	return (1);
