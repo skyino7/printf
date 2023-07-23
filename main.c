@@ -26,20 +26,20 @@ int main(void)
     _printf(" %s ", "");
     printf(" %s \n", "");
 
-    _printf(" %s ", "-");
-    printf(" %s \n", "-");
+    _printf("2 %s ", "-");
+    printf("2 %s \n", "-");
 
-    _printf(" %s %s ", "", "-");
-    printf(" %s %s \n", "", "-");
+    printf("3 %s %s ", "", "-");
+    _printf("3 %s %s \n", "", "-");
 
-    _printf(" %s %s ", " - ", "");
-    printf(" %s %s \n", " - ", "");
+    _printf("4 %s %s ", " - ", "");
+    printf("4 %s %s \n", " - ", "");
 
-    _printf(" %s %s %s %s %s", " - ", "", "4", "", s2);
-    printf(" %s %s %s %s %s\n", " - ", "", "4", "", s2);
+    _printf("5 %s %s %s %s %s", " - ", "", "4", "", s2);
+    printf("5 %s %s %s %s %s\n", " - ", "", "4", "", s2);
 
-    _printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 ");
-    printf(" %s %s %s %s %s \n", " - ", "", "4", "", "2 ");
+    _printf("6 %s %s %s %s %s ", " - ", "", "4", "", "2 ");
+    printf("6 %s %s %s %s %s \n", " - ", "", "4", "", "2 ");
 
     _printf(" NULL %s NULL ", NULL);
     printf(" NULL %s NULL \n", NULL);
