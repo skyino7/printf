@@ -84,10 +84,16 @@ int main(void)
 
     len = 2, len2 = 5;
 
-    sum = len * len2;
+    sum = len + len2;
 
     _printf("Sum:[%d, %i]\n", sum, sum);
     printf("Sum:[%d, %i]\n", sum, sum);
+
+    printf("\n");
+    printf("\n");
+
+    len = _printf("long: [%i], [%d]\n", -4545439394949595, -4545439394949595);
+    /* len2 = printf("long: [%i], [%d]\n", -4545439394949595, -45454393949); */
     
     return (0);
 }
