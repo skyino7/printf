@@ -65,6 +65,11 @@ int main(void)
     len = _printf("long: [%i], [%d]\n", -4545439394949595, -4545439394949595);
     /* len2 = printf("long: [%i], [%d]\n", -4545439394949595, -4545439394949595); */
 
+    len = _printf("N-Greater than int: [%i], [%d]\n", -454543939494, -454543939494);
+    /* len2 = printf("N-Greater than int: [%i], [%d]\n", -454543939494, -454543939494); */
+    printf("Len:[%d]\n", len);
+    /* printf("Len1:[%d]\n\n", len2); */
+
     _printf("Length:[%d, %i]\n", len, len);
     /* printf("Length:[%d, %i]\n", len2, len2); */
 
