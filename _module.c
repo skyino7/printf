@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _module - loops through s to print and increment pcount
  * @format: string input
@@ -7,9 +8,10 @@
  */
 
 void _module(const char *format, va_list arg, int *pcount)
-{ 
+{
+    char c = va_arg(arg, int);
+
     (void)format;
-    (void)arg;
-    _putchar('%');
+    _putchar(c);
     *pcount += 1;
 }
