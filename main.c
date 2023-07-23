@@ -44,11 +44,11 @@ int main(void)
     _printf(" NULL %s NULL ", NULL);
     printf(" NULL %s NULL \n", NULL);
 
-    // len = _printf("123456\n");
-    // len2 = printf("123456\n");
+    /* len = _printf("123456\n");
+    len2 = printf("123456\n");
 
-    // _printf("Length:[%d, %i]\n", len, len);
-    // printf("Length:[%d, %i]\n", len2, len2);
+    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len2, len2); */
 
 
   
