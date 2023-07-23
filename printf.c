@@ -11,9 +11,9 @@ int _printf(const char *format, ...)
     /*char buffer[1024];*/
 	va_list args;
 	int count = 0, i, j = 1, k;
-	va_start(args, format);
 	sp output[4] = {{'c', _char}, {'s', _string}, {'i', _integer}, {'d', _integer}};
 
+	va_start(args, format);
 	for (i = 0; format[i] != '\0';)
 	{
 		if (format[i] == '%')
