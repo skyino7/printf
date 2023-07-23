@@ -1,17 +1,18 @@
 #include "main.h"
+
 /**
  * _printf - custom version of printf
  * @format: input string which may contain specifiers
  * Return: number of character printed to std output including new line
  */
+
 int _printf(const char *format, ...)
 {
     /*char buffer[1024];*/
 	va_list args;
-	char c, *str;
-	int count = 0, i, j = 1, num;
-
+	int count = 0, i, j = 1, k;
 	va_start(args, format);
+	sp output[4] = {{'c', _char}, {'s', _string}, {'i', _integer}, {'d', _integer}};
 
 	for (i = 0; format[i] != '\0';)
 	{
@@ -19,33 +20,13 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + j] == ' ')
 				j++;
-			else if (format[i + j] == 'c')
+			else 
 			{
-				c = va_arg(args, int);
-				_char(c, &count);
-				i += j + 1;
-				j = 1;
-			}
-			else if (format[i + j] == 's')
-			{
-				str = va_arg(args, char *);
-				if(!str)
-					str = "(null)";
-				_string(str, &count);
-				i += j + 1;
-				j = 1;
-			}
-			else if (format[i + j] == '%')
-			{
-				_putchar('%');
-				count++;
-                i += j + 1;
-				j = 1;
-			}
-			else if (format[i + j] == 'd' || format[i + j] == 'i')
-			{
-				num = va_arg(args, int);
-				_integer(num, &count);
+				for(k = 0; k < 4 ; k++)
+				{
+					if (output[k].spesifier == format[i + j])
+						output[k].function(format, args, &count);
+				}
 				i += j + 1;
 				j = 1;
 			}

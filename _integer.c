@@ -6,10 +6,12 @@
  * @pcount: pointer
  */
 
-void _integer(int num, int *pcount)
+void _integer(char *format, va_list arg, int *pcount)
 {
+    (void)format;
     int Tens = 1;
-   int cpy;
+    int cpy;
+    int num = va_arg(arg, int);
    
    if (num < 0)
    {
