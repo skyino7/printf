@@ -7,7 +7,7 @@
  * @arg: va_list
  */
 
-void _string(const char *format, va_list arg, int *pcount)
+int _string(const char *format, va_list arg, int *pcount)
 {	
 	int j;
 	char *s = va_arg(arg, char *);
@@ -21,4 +21,5 @@ void _string(const char *format, va_list arg, int *pcount)
 		_putchar(s[j]);
 		*pcount += 1;
 	}
+	return(1);
 }

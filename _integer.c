@@ -7,7 +7,7 @@
  * @arg: va_list
  */
 
-void _integer(const char *format, va_list arg, int *pcount)
+int _integer(const char *format, va_list arg, int *pcount)
 { 
     int Tens = 1;
     int cpy;
@@ -38,5 +38,5 @@ void _integer(const char *format, va_list arg, int *pcount)
     }
     _putchar((num % 10) + '0');
     *pcount += 1;
-
+    return(1);
 }

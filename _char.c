@@ -7,11 +7,12 @@
  * @arg: va_list
  */
 
-void _char(const char *format, va_list arg, int *pcount)
+int _char(const char *format, va_list arg, int *pcount)
 {
 	char c = va_arg(arg, int);
 
 	(void)format;
 	_putchar(c);
 	*pcount += 1;
+	return(1);
 }

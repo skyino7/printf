@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 {
     /*char buffer[1024];*/
 	va_list args;
-	int count = 0, i, j = 1, k;
+	int count = 0, i, j = 1, k, flag = 0;
 	sp output[5] = {{'c', _char}, {'s', _string},{'%', _module},
 	{'i', _integer}, {'d', _integer}};
 
@@ -19,14 +19,18 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + j] == ' ')
-				j++;
+			if (format[i + j] == ' ' || format[i + j] == '\0')
+				{
+					if (format[i + j] == '\0')
+						return(count);
+					j++;
+				}
 			else
 			{
 				for (k = 0; k < 5; k++)
 				{
 					if (output[k].spesifier == format[i + j])
-						output[k].function(format, args, &count);
+						flag = output[k].function(format, args, &count);
 				}
 				i += j + 1;
 				j = 1;

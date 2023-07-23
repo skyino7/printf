@@ -9,14 +9,14 @@
 typedef struct
 {
     char spesifier;
-    void (*function)(const char *format, va_list arg, int *pcount);
+    int (*function)(const char *format, va_list arg, int *pcount);
 } sp;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-void _string(const char *format, va_list arg, int *pcount);
-void _char(const char *format, va_list arg, int *pcount);
-void _integer(const char *format, va_list arg, int *pcount);
-void _module(const char *format, va_list arg, int *pcount);
+int _string(const char *format, va_list arg, int *pcount);
+int _char(const char *format, va_list arg, int *pcount);
+int _integer(const char *format, va_list arg, int *pcount);
+int _module(const char *format, va_list arg, int *pcount);
 
 #endif /*MAIN_H*/
