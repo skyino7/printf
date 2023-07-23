@@ -8,10 +8,10 @@ int main(void)
     // int len;
     // int len2;
     
-    int i = _printf("1245%    ", "12345");
+    int i = _printf("12345%    s %%%%%%%%%%%%%%%%%%%", "12345");
     _printf(" %d\n", i);
 
-    int j = printf("12345%    ", "12345");
+    int j = printf("12345%    s %%%%%%%%%%%%%%%%%%%", "12345");
     printf(" %d\n", j);
 
     // len = _printf("123456\n");
