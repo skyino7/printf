@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	va_list args;
 	int count = 0, i, j = 1, k, flag = 0;
 	sp output[5] = {{'c', _char}, {'s', _string}, {'%', _module},
-	{'i', _integer}, {'d', _integer}};
+		{'i', _integer}, {'d', _integer}};
 
 	va_start(args, format);
 	(void)flag;
@@ -18,11 +18,9 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + j] == ' ' || format[i + j] == '\0')
+			if (format[i + j] == '\0')
 			{
-				if (format[i + j] == '\0')
-					return (count);
-				j++;
+				return (-1);
 			}
 			else
 			{

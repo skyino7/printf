@@ -5,13 +5,14 @@
  * @format: string input
  * @pcount: character counter for the printf return
  * @arg: va_list
+ * Return: 1
  */
 
 int _module(const char *format, va_list arg, int *pcount)
 {
-    (void)arg;
-    (void)format;
-    _putchar('%');
-    *pcount += 1;
-    return (1);
+	(void)arg;
+	(void)format;
+	_putchar('%');
+	*pcount += 1;
+	return (1);
 }
