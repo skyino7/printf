@@ -13,7 +13,7 @@ void _string(const char *format, va_list arg, int *pcount)
 	char *s = va_arg(arg, char *);
 
 	(void)format;
-	if(!s)
+	if(sizeof(s))
 		s = "(null)";
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
