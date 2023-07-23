@@ -35,7 +35,7 @@ int main(void)
     len = _printf("Percent:[%%]\n");
     len2 = printf("Percent:[%%]\n");
 
-    a = 2; b = 6; sum = a + b;
+    a = -1; b = 0; sum = a + b;
 
     _printf("%i\n", sum);
     printf("%i\n", sum);
