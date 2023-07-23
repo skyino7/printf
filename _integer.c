@@ -37,12 +37,6 @@ int _integer(const char *format, va_list arg, int *pcount)
 		cpy = cpy / 10;
 	}
 
-	while (num / Tens > 9)
-	{
-		Tens *= 10;
-	}
-	
-
 	while (num > 9)
 	{
 		_putchar(num / Tens + '0');

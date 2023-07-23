@@ -82,9 +82,9 @@ int main(void)
     printf("\n");
     printf("\n");
 
-    len = 2, len2 = 5;
+    len = 200, len2 = 155;
 
-    sum = len + len2;
+    sum = len * len2;
 
     _printf("Sum:[%d, %i]\n", sum, sum);
     printf("Sum:[%d, %i]\n", sum, sum);
