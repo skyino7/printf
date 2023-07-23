@@ -4,7 +4,7 @@
 int main(void)
 {
  
-    //char *s;
+    char *s2 = "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.";
     // int len;
     // int len2;
     
@@ -13,6 +13,36 @@ int main(void)
 
     int j = printf("12345%    s %%%%%%%%%%%%%%%%%%%", "12345");
     printf(" %d\n", j);
+
+    _printf("%s", "");
+    printf("%s\n", "");
+
+    _printf(" %s", "");
+    printf(" %s\n", "");
+
+    _printf("%s ", "");
+    printf("%s \n", "");
+
+    _printf(" %s ", "");
+    printf(" %s \n", "");
+
+    _printf(" %s ", "-");
+    printf(" %s \n", "-");
+
+    _printf(" %s %s ", "", "-");
+    printf(" %s %s \n", "", "-");
+
+    _printf(" %s %s ", " - ", "");
+    printf(" %s %s \n", " - ", "");
+
+    _printf(" %s %s %s %s %s", " - ", "", "4", "", s2);
+    printf(" %s %s %s %s %s\n", " - ", "", "4", "", s2);
+
+    _printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 ");
+    printf(" %s %s %s %s %s \n", " - ", "", "4", "", "2 ");
+
+    _printf(" NULL %s NULL ", NULL);
+    printf(" NULL %s NULL \n", NULL);
 
     // len = _printf("123456\n");
     // len2 = printf("123456\n");
