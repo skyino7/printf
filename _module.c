@@ -9,6 +9,7 @@
 
 void _module(const char *format, va_list arg, int *pcount)
 {
+    (void)arg;
     (void)format;
     _putchar('%');
     *pcount += 1;
