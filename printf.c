@@ -11,7 +11,8 @@ int _printf(const char *format, ...)
     /*char buffer[1024];*/
 	va_list args;
 	int count = 0, i, j = 1, k;
-	sp output[4] = {{'c', _char}, {'s', _string}, {'i', _integer}, {'d', _integer}};
+	sp output[4] = {{'c', _char}, {'s', _string},
+	{'i', _integer}, {'d', _integer}};
 
 	va_start(args, format);
 	for (i = 0; format[i] != '\0';)
@@ -20,9 +21,9 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + j] == ' ')
 				j++;
-			else 
+			else
 			{
-				for(k = 0; k < 4 ; k++)
+				for(k = 0; k < 4; k++)
 				{
 					if (output[k].spesifier == format[i + j])
 						output[k].function(format, args, &count);
