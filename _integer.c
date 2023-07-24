@@ -29,7 +29,7 @@ int _integer(const char *format, va_list arg, int *pcount)
 		cpy = cpy / 10;
 	}
 
-	while (num > 9)
+	while (num > 9 || Tens > 1)
 	{
 		_putchar(num / Tens + '0');
 		*pcount += 1;
