@@ -3,8 +3,8 @@
 #include <limits.h>
 int main(void)
 {
-    int len;
-    int len2, sum = 0;
+    /*int len;
+    int len2, sum = 0;*/
     /* char *s2 = "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.";
     int len;
     int len2;
@@ -111,7 +111,7 @@ int main(void)
 
     /* printf(NULL); */
 
-    len = _printf("long: [%i], [%d]\n", 21474836499, -21474836498);
+    /*len = _printf("long: [%i], [%d]\n", 21474836499, -21474836498);
     len2 = printf("long: [%i], [%d]\n", 21474836499, -21474836498);
 
     _printf("Len:[%d]\n", len);
@@ -140,7 +140,23 @@ int main(void)
     len = _printf("Percentage: %%\n");
     len2 = printf("Percentage: %%\n");
     printf("Len:[%d]\n", len);
-    printf("Len1:[%d]\n\n", len2);
+    printf("Len1:[%d]\n\n", len2);*/
+
+    int num1 = 123;
+    int num2 = -456;
+    int num3 = 0;
+    int num4 = 0xFFFFFFFF;
+
+    printf("%i\n", num1);
+    printf("%i\n", num2);        
+    printf("%i\n", num3);         
+    
+    printf("%i\n", 0x10);         
+    printf("%i\n", 010);          
+    
+    printf("%i\n", 'A');          
+    
+    printf("%i\n", num4);         
     
     return (0);
 }
