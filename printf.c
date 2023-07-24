@@ -33,7 +33,11 @@ int _printf(const char *format, ...)
 						flag = output[k].function(format, args, &count);
 				}
 				if (flag == 0)
-					return (-1);
+				{
+					_putchar(format[i]);
+					_putchar(format[i + j]);
+					count += 2;
+				}
 				i += j + 1;
 				j = 1;
 			}

@@ -121,6 +121,26 @@ int main(void)
 
     _printf("Sum:[%d, %i]\n", sum, sum);
     printf("Sum:[%d, %i]\n", sum, sum);
+
+    len = _printf("A %s sentence\n", "simple");
+    len2 = printf("A %s sentence\n", "simple");
+    printf("Len:[%d]\n", len);
+    printf("Len1:[%d]\n\n", len2);
+    
+    len = _printf("A %c%c%s sentence\n", 's', 'i', "mple");
+    len2 = printf("A %c%c%s sentence\n", 's', 'i', "mple");
+    printf("Len:[%d]\n", len);
+    printf("Len1:[%d]\n\n", len2);
+
+    len = _printf("A: A simple %v entence\n");
+    len2 = printf("B: A simple %v entence\n");
+    printf("Len:[%d]\n", len);
+    printf("Len1:[%d]\n\n", len2);
+
+    len = _printf("Percentage: %%\n");
+    len2 = printf("Percentage: %%\n");
+    printf("Len:[%d]\n", len);
+    printf("Len1:[%d]\n\n", len2);
     
     return (0);
 }
