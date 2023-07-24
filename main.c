@@ -3,7 +3,8 @@
 #include <limits.h>
 int main(void)
 {
- 
+    int len;
+    int len2, sum = 0;
     /* char *s2 = "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.";
     int len;
     int len2;
@@ -110,10 +111,13 @@ int main(void)
 
     /* printf(NULL); */
 
-    /*len = _printf("long: [%i], [%d]\n", -4545439394949595, -4545439394949595);*/
-    /* len2 = printf("long: [%i], [%d]\n", -4545439394949595, -45454393949); */
+    len = _printf("long: [%i], [%d]\n", 21474836499, -21474836498);
+    len2 = printf("long: [%i], [%d]\n", 21474836499, -21474836498);
 
-    int len, len2, sum = 5555555555555555555555555555;
+    _printf("Len:[%d]\n", len);
+    printf("Len1:[%d]\n\n", len2);
+
+    len, len2, sum = 555555555;
 
     _printf("Sum:[%d, %i]\n", sum, sum);
     printf("Sum:[%d, %i]\n", sum, sum);

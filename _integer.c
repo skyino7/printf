@@ -15,29 +15,35 @@ int _integer(const char *format, va_list arg, int *pcount)
 	int num = va_arg(arg, int);
 
 	(void)format;
-	if (num < 0)
+
+	if (num <= 2147483647 && num > -2147483648)
 	{
-		_putchar('-');
+		if (num < 0)
+		{
+			_putchar('-');
+			*pcount += 1;
+			num *= -1;
+		}
+
+		cpy = num;
+		while (cpy > 9)
+		{
+			Tens *= 10;
+			cpy = cpy / 10;
+		}
+
+		while (num > 9 || Tens > 1)
+		{
+			_putchar(num / Tens + '0');
+			*pcount += 1;
+			num = num % Tens;
+			Tens /= 10;
+		}
+		_putchar((num % 10) + '0');
 		*pcount += 1;
-		num *= -1;
+
+		return (1);
 	}
 
-	cpy = num;
-	while (cpy > 9)
-	{
-		Tens *= 10;
-		cpy = cpy / 10;
-	}
-
-	while (num > 9 || Tens > 1)
-	{
-		_putchar(num / Tens + '0');
-		*pcount += 1;
-		num = num % Tens;
-		Tens /= 10;
-	}
-	_putchar((num % 10) + '0');
-	*pcount += 1;
-
-	return (1);
+	return (0);
 }

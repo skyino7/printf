@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 						flag = output[k].function(format, args, &count);
 				}
 				if (flag == 0)
-					_putchar(format[i + j]);
+					return (-1);
 				i += j + 1;
 				j = 1;
 			}
