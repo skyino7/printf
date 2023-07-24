@@ -148,15 +148,25 @@ int main(void)
     int num4 = 0xFFFFFFFF;
 
     printf("%i\n", num1);
-    printf("%i\n", num2);        
+    _printf("%i\n", num1);
+
+    printf("%i\n", num2);
+    _printf("%i\n", num1);
+
     printf("%i\n", num3);         
+    _printf("%i\n", num1);
+
+    printf("%i\n", 0x10);
+    _printf("%i\n", num1);
+
+    printf("%i\n", 010);  
+    _printf("%i\n", 010);    
     
-    printf("%i\n", 0x10);         
-    printf("%i\n", 010);          
+    printf("%i\n", 'A'); 
+    _printf("%i\n", 'A');
     
-    printf("%i\n", 'A');          
-    
-    printf("%i\n", num4);         
+    printf("%i\n", num4);
+    _printf("%i\n", num4);       
     
     return (0);
 }
