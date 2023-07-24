@@ -23,14 +23,6 @@ int _integer(const char *format, va_list arg, int *pcount)
 	}
 
 	cpy = num;
-
-	/* if (num >= 0 && num <= 9)
-	{
-		_putchar(num + '0');
-		*pcount += 1;
-	} */
-	
-	
 	while (cpy > 9)
 	{
 		Tens *= 10;
