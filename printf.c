@@ -23,8 +23,10 @@ int _printf(const char *format, ...)
 		else if (format[i] == '%')
 		{
 			if (format[i + j] == '\0' || format[i + j] == ' ')
+			{
 				return (-1);
-			else if
+			}
+			else
 			{
 				for (k = 0; k < 5; k++)
 				{
