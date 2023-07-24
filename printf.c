@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 					if (output[k].spesifier == format[i + j])
 						flag = output[k].function(format, args, &count);
 				}
-				if (falg == 0)
+				if (flag == 0)
 					_putchar(format[i + j]);
 				i += j + 1;
 				j = 1;
