@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	if (!format)
 		return (-1);
 	va_start(args, format);
-	(void)flag;
+	/*(void)flag;*/
 	for (i = 0; format[i] != '\0';)
 	{
 		if (format == NULL)
@@ -33,6 +33,8 @@ int _printf(const char *format, ...)
 					if (output[k].spesifier == format[i + j])
 						flag = output[k].function(format, args, &count);
 				}
+				if (flag == 0)
+					return (-1);
 				i += j + 1;
 				j = 1;
 			}
