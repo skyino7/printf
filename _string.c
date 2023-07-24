@@ -15,12 +15,15 @@ int _string(const char *format, va_list arg, int *pcount)
 
 	(void)format;
 	if (!s)
+	{
 		s = "(null)";
+		*pcount += 1;
+	}
     /*char *s = va_arg(ars, char*);*/
 	for (j = 0; s[j] != '\0'; j++)
 	{
 		_putchar(s[j]);
 		*pcount += 1;
 	}
-	return (1);
+	return (*pcount);
 }
