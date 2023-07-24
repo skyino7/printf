@@ -13,15 +13,13 @@ int _printf(const char *format, ...)
 		{'i', _integer}, {'d', _integer}};
 
 	va_start(args, format);
-	if (!format || (format[0] == '%' && !format[1])
-	|| (format[0] == '%' && format[1] == ' ' && !format[2]))
-		return (-1);
 
 	(void)flag;
 	for (i = 0; format[i] != '\0';)
 	{
-		if (format == NULL)
-			return (-1);
+		if (!format || (format[0] == '%' && !format[1])
+		|| (format[0] == '%' && format[1] == ' ' && !format[2]))
+		return (-1);
 		else if (format[i] == '%')
 		{
 			if (format[i + j] == '\0' || format[i + j] == ' ')
