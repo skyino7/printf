@@ -25,5 +25,5 @@ int _string(const char *format, va_list arg, int *pcount)
 		_putchar(s[j]);
 		*pcount += 1;
 	}
-	return (*pcount);
+	return (1);
 }
