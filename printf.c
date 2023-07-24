@@ -12,11 +12,18 @@ int _printf(const char *format, ...)
 	sp output[5] = {{'c', _char}, {'s', _string}, {'%', _module},
 		{'i', _integer}, {'d', _integer}};
 
+	if (!format)
+		return (-1);
+	
+
 	va_start(args, format);
 	(void)flag;
 	for (i = 0; format[i] != '\0';)
 	{
-		if (format[i] == '%')
+		if (format == NULL)
+			return (-1);
+		
+		else if (format[i] == '%')
 		{
 			if (format[i + j] == '\0' || format[i + j] == ' ')
 			{
