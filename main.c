@@ -142,31 +142,34 @@ int main(void)
     printf("Len:[%d]\n", len);
     printf("Len1:[%d]\n\n", len2);*/
 
-    int num1 = 123;
-    int num2 = -456;
-    int num3 = 0;
-    int num4 = 4294967295; 
+        printf("%d\n", 65176);
+        _printf("%d\n", 65176);
+        printf("%d\n", -777765176);
+        _printf("%d\n", -777765176);
+        printf("%d\n", 00002);
+        _printf("%d\n", 00002);
+        printf("%d\n", 0);
+        _printf("%d\n", 0);
+        printf("%d\n", 7);
+        _printf("%d\n", 7);
+        printf("%d\n", -2255445);
+        _printf("%d\n", -2255445);
+        printf("Maximum value of int: %d\n", INT_MAX);
+        _printf("Maximum value of int: %d\n", INT_MAX);
+        printf("Minimum value of int: %d\n", INT_MIN);
+        _printf("Minimum value of int: %d\n", INT_MIN);
+        printf("--------------------------------\n");
+        printf("%i\n", 65176);
+        _printf("%i\n", 65176);
+        printf("%i\n", 0);
+        _printf("%i\n", 0);
+        printf("%i\n", -2255445);
+        _printf("%i\n", -2255445);
+        printf("Maximum value of int: %i\n", INT_MAX);
+        _printf("Maximum value of int: %i\n", INT_MAX);
+        printf("Minimum value of int: %i\n", INT_MIN);
+        _printf("Minimum value of int: %i\n", INT_MIN);
 
-    printf("%i\n", num1);
-    _printf("%i\n", num1);
-
-    printf("%i\n", num2);
-    _printf("%i\n", num2);
-
-    printf("%i\n", num3);         
-    _printf("%i\n", num3);
-
-    printf("%i\n", 0x7FFF);
-    _printf("%i\n", 0x7FFF);
-
-    printf("%i\n", 0xFFFF);  
-    _printf("%i\n", 0xFFFF);    
-    
-    printf("%i\n", 012345); 
-    _printf("%i\n", 012345);
-    
-    printf("%i\n", num4);
-    _printf("%i\n", num4);       
     
     return (0);
 }

@@ -11,20 +11,22 @@
 int _integer(const char *format, va_list arg, int *pcount)
 {
 	int Tens = 1;
-	int cpy;
-	int num = va_arg(arg, int);
+	unsigned int cpy;
+	int holder = va_arg(arg, int);
+	long unsigned int num;
 
 	(void)format;
-
-	if (num <= 2147483647 && num > -2147483648)
+	if (holder <= 2147483647 && holder >= -2147483648)
 	{
-		if (num < 0)
+		if (holder < 0)
 		{
+
 			_putchar('-');
 			*pcount += 1;
-			num *= -1;
+			num = holder * -1;
 		}
-
+		else
+			num = holder;
 		cpy = num;
 		while (cpy > 9)
 		{
