@@ -39,5 +39,5 @@ int _integer(const char *format, va_list arg, int *pcount)
 	_putchar((num % 10) + '0');
 	*pcount += 1;
 
-	return (*pcount);
+	return (1);
 }
