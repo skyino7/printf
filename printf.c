@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	(void)flag;
 	for (i = 0; format[i] != '\0';)
 	{
-		if (format == NULL)
+		if (format == NULL || (format[i] == '%' && !format[i + j]))
 			return (-1);
 		else if (format[i] == '%')
 		{
