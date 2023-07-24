@@ -1,4 +1,5 @@
 #include "main.h"
+int _printf(const char *format, ...);
 /**
  * _printf - custom version of printf
  * @format: input string which may contain specifiers
