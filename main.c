@@ -151,13 +151,13 @@ int main(void)
     _printf("%i\n", num1);
 
     printf("%i\n", num2);
-    _printf("%i\n", num1);
+    _printf("%i\n", num2);
 
     printf("%i\n", num3);         
-    _printf("%i\n", num1);
+    _printf("%i\n", num3);
 
     printf("%i\n", 0x10);
-    _printf("%i\n", num1);
+    _printf("%i\n", 0x10);
 
     printf("%i\n", 010);  
     _printf("%i\n", 010);    
