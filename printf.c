@@ -6,7 +6,6 @@
  */
 int _printf(const char *format, ...)
 {
-	/*char buffer[1024];*/
 	va_list args;
 	int count = 0, i, j = 1, k, flag = 0;
 	sp output[5] = {{'c', _char}, {'s', _string}, {'%', _module},
@@ -15,7 +14,7 @@ int _printf(const char *format, ...)
 	if (!format)
 		return (-1);
 	va_start(args, format);
-	/*(void)flag;*/
+	(void)flag;
 	for (i = 0; format[i] != '\0';)
 	{
 		if (format == NULL)
@@ -33,8 +32,6 @@ int _printf(const char *format, ...)
 					if (output[k].spesifier == format[i + j])
 						flag = output[k].function(format, args, &count);
 				}
-				if (flag == 0)
-					return (-1);
 				i += j + 1;
 				j = 1;
 			}
