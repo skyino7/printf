@@ -12,8 +12,8 @@ int _integer(const char *format, va_list arg, int *pcount)
 {
 	int Tens = 1;
 	unsigned int cpy;
-	int holder = va_arg(arg, int);
-	long unsigned int num;
+	unsigned int num;
+	signed int holder = (signed int)va_arg(arg, int);
 
 	(void)format;
 	if (holder <= 2147483647 && holder >= -2147483648)
