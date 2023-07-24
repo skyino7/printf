@@ -145,7 +145,7 @@ int main(void)
     int num1 = 123;
     int num2 = -456;
     int num3 = 0;
-    int num4 = 0xFFFFFFFF;
+    int num4 = 4294967295; 
 
     printf("%i\n", num1);
     _printf("%i\n", num1);
@@ -156,14 +156,14 @@ int main(void)
     printf("%i\n", num3);         
     _printf("%i\n", num3);
 
-    printf("%i\n", 0x10);
-    _printf("%i\n", 0x10);
+    printf("%i\n", 0x7FFF);
+    _printf("%i\n", 0x7FFF);
 
-    printf("%i\n", 010);  
-    _printf("%i\n", 010);    
+    printf("%i\n", 0xFFFF);  
+    _printf("%i\n", 0xFFFF);    
     
-    printf("%i\n", 'A'); 
-    _printf("%i\n", 'A');
+    printf("%i\n", 012345); 
+    _printf("%i\n", 012345);
     
     printf("%i\n", num4);
     _printf("%i\n", num4);       
