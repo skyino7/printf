@@ -14,22 +14,17 @@ int _printf(const char *format, ...)
 
 	if (!format)
 		return (-1);
-	
-
 	va_start(args, format);
 	(void)flag;
 	for (i = 0; format[i] != '\0';)
 	{
 		if (format == NULL)
 			return (-1);
-		
 		else if (format[i] == '%')
 		{
 			if (format[i + j] == '\0' || format[i + j] == ' ')
-			{
 				return (-1);
-			}
-			else
+			else if
 			{
 				for (k = 0; k < 5; k++)
 				{
