@@ -16,14 +16,6 @@ int _b(const char *format, va_list arg, int *pcount)
 	unsigned int result = 0;
 
 	(void)format;
-
-	if (num == 0)
-	{
-		_putchar('0');
-		*pcount += 1;
-		return (1);
-	}
-
 	while (num)
 	{
 		result += (num % 2) * Tens;
