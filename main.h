@@ -1,9 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdarg.h>
+
 
 /**
  * struct sp - structure that holds specifiers and their corresponing function
@@ -22,5 +23,6 @@ int _string(const char *format, va_list arg, int *pcount);
 int _char(const char *format, va_list arg, int *pcount);
 int _integer(const char *format, va_list arg, int *pcount);
 int _module(const char *format, va_list arg, int *pcount);
+int _binary(const char *format, va_list arg, int *pcount);
 
 #endif /*MAIN_H*/
