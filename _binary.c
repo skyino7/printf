@@ -12,7 +12,8 @@
 int _b(const char *format, va_list arg, int *pcount)
 {
 	unsigned int num = va_arg(arg, unsigned int);
-	int Tens = 1, result = 0;
+	int Tens = 1; 
+    unsigned int result = 0;
 
 	(void)format;
 	while (num)
