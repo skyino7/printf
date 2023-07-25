@@ -23,12 +23,12 @@ int _b(const char *format, va_list arg, int *pcount)
     }
     while (result > 9 || Tens > 1)
 	{
-		_putchar(num / Tens + '0');
+		_putchar(result / Tens + '0');
 		*pcount += 1;
-		num = num % Tens;
+		result = result % Tens;
 		Tens /= 10;
 	}
-	_putchar((num % 10) + '0');
+	_putchar((result % 10) + '0');
 	*pcount += 1;
     return (1);
 }
