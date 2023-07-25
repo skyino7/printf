@@ -13,7 +13,7 @@ int _b(const char *format, va_list arg, int *pcount)
 {
 	unsigned int num = va_arg(arg, unsigned int);
 	long long unsigned int Tens = 1;
-	long long unsigned int result = 0;
+	unsigned int result = 0;
 
 	(void)format;
 	while (num)
