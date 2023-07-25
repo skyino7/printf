@@ -21,6 +21,7 @@ int _b(const char *format, va_list arg, int *pcount)
 		Tens *= 10;
 		num /= 2;
 	}
+    Tens /= 10;
 	while (result > 9 || Tens > 1)
 	{
 		_putchar(result / Tens + '0');
