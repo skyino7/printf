@@ -12,8 +12,8 @@
 int _b(const char *format, va_list arg, int *pcount)
 {
 	unsigned int num = va_arg(arg, unsigned int);
-	int Tens = 1; 
-    unsigned int result = 0;
+	int Tens = 1;
+	unsigned int result = 0;
 
 	(void)format;
 	while (num)
@@ -22,7 +22,7 @@ int _b(const char *format, va_list arg, int *pcount)
 		Tens *= 10;
 		num /= 2;
 	}
-    Tens /= 10;
+	Tens /= 10;
 	while (result > 9 || Tens > 1)
 	{
 		_putchar(result / Tens + '0');
