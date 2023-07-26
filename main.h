@@ -24,5 +24,6 @@ int _char(const char *format, va_list arg, int *pcount);
 int _integer(const char *format, va_list arg, int *pcount);
 int _module(const char *format, va_list arg, int *pcount);
 int _b(const char *format, va_list arg, int *pcount);
+int _rev(const char *format, va_list arg, int *pcount);
 
 #endif /*MAIN_H*/

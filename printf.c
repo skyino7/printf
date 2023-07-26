@@ -9,8 +9,8 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int count = 0, i, j = 1, k, flag = 0;
-	sp output[6] = {{'c', _char}, {'s', _string}, {'%', _module},
-		{'i', _integer}, {'d', _integer}, {'b', _b}};
+	sp output[7] = {{'c', _char}, {'s', _string}, {'%', _module},
+		{'i', _integer}, {'d', _integer}, {'b', _b}, {'r', _rev}};
 
 	if (!format)
 		return (-1);
@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				for (k = 0; k < 6; k++)
+				for (k = 0; k < 7; k++)
 				{
 					if (output[k].spesifier == format[i + j])
 						flag = output[k].function(format, args, &count);
