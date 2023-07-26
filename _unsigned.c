@@ -16,12 +16,12 @@ int _u(const char *format, va_list arg, int *pcount)
 	unsigned int holder = va_arg(arg, unsigned int);
 
 	(void)format;
-    if (holder == 0)
-    {
-        _putchar('0');
-        *pcount += 1;
-        return (1);
-    }
+	if (holder == 0)
+	{
+		_putchar('0');
+		*pcount += 1;
+		return (1);
+	}
 	if (holder <= 4294967295U)
 	{
 		num = holder;
