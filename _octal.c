@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _b -  unsigned int argument is converted to binary
+ * _octal -  unsigned int argument is converted to base 8
  *
  * @format: input
  * @arg: va_list input
