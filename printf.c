@@ -10,7 +10,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	int count = 0, i, j = 1, k, flag = 0;
 	sp output[9] = {{'c', _char}, {'s', _string}, {'%', _module},
-		{'i', _integer}, {'d', _integer}, {'b', _b}, {'r', _rev}, {'o', _octal}, {'u', _u}};
+		{'i', _integer}, {'d', _integer}, {'b', _b}, {'r', _rev},
+		 {'o', _octal}, {'u', _u}};
 
 	if (!format)
 		return (-1);
