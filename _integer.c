@@ -16,7 +16,7 @@ int _integer(const char *format, va_list arg, int *pcount)
 	signed int holder = (signed int)va_arg(arg, int);
 
 	(void)format;
-	if (holder <= 2147483647 || holder > -2147483648)
+	if (holder <= 2147483647U || holder > -2147483648)
 	{
 		if (holder < 0)
 		{

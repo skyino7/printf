@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/pc/OneDrive/Desktop/printf",
-      "program": "c:/Users/pc/OneDrive/Desktop/printf/build/Debug/outDebug",
+      "cwd": "c:/Users/pc/OneDrive/Desktop/Alx/ALX Programing/printf backup",
+      "program": "c:/Users/pc/OneDrive/Desktop/Alx/ALX Programing/printf backup/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

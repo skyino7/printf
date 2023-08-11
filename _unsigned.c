@@ -22,7 +22,7 @@ int _u(const char *format, va_list arg, int *pcount)
         *pcount += 1;
         return (1);
     }
-	if (holder <= 4294967295)
+	if (holder <= 4294967295U)
 	{
 		num = holder;
 		cpy = num;
